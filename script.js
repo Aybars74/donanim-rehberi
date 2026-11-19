@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const clearBtn = document.getElementById("clearBtn");
@@ -39,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : `${visibleCount} eşleşen içerik bulundu.`;
       emptyMessage.hidden = true;
     }
-    }
-    
+  }
+
   searchInput.addEventListener("input", filterCards);
 
   clearBtn.addEventListener("click", () => {
@@ -48,4 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     filterCards();
     searchInput.focus();
   });
+
+  filterCards();
 });
