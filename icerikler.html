@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonanımRehberi | İçerikler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">DonanımRehberi</a>
+      <nav aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="icerikler.html" class="active" aria-current="page">İçerikler</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Temel Donanım Bileşenleri</h1>
+      <p>Aşağıdaki arama kutusunu kullanarak donanım bileşenlerini başlıklarına göre filtreleyebilirsiniz.</p>
+    </section>
+
+    <section class="search-panel" aria-label="İçerik Arama">
+      <label for="searchInput" class="search-label">Donanım Başlığı Ara:</label>
+      <div class="search-controls">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Örn: İşlemci, Ekran Kartı, SSD..."
+          autocomplete="off"
+        >
+        <button type="button" id="clearBtn" class="btn btn-clear">Temizle</button>
+      </div>
+      <p id="resultCount" class="result-count" aria-live="polite">Toplam 6 içerik gösteriliyor.</p>
+    </section>
+
+    <p id="emptyMessage" class="empty-message" hidden>
+      Aradığınız başlıkla eşleşen bir donanım bileşeni bulunamadı.
+    </p>
+
+    <section id="cardGrid" class="card-grid" aria-label="Donanım Listesi">
+      <article class="card">
+        <h2 class="card-title">İşlemci (CPU)</h2>
+        <p class="card-desc">Bilgisayarın tüm mantıksal ve matematiksel işlemlerini yürüten, komutları işleyen ana merkez birimidir.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> Çekirdek sayısı, saat hızı (GHz) ve anakart soket uyumluluğu.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Ekran Kartı (GPU)</h2>
+        <p class="card-desc">Görüntü işleme, üç boyutlu oyun performansı ve paralel yapay zekâ hesaplamalarından sorumlu donanımdır.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> VRAM kapasitesi, bellek veri yolu genişliği ve soğutma tasarımı.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Anakart (Motherboard)</h2>
+        <p class="card-desc">Tüm donanım bileşenlerinin fiziksel olarak bağlandığı ve birbirleriyle veri iletişimi kurduğu ana devre kartıdır.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> Yonga seti (Chipset), RAM slot sayısı ve M.2 NVMe desteği.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Bellek (RAM)</h2>
+        <p class="card-desc">Çalışan uygulamaların ve işletim sisteminin anlık verilerini geçici olarak çok yüksek hızda tutan bellektir.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> DDR nesli (DDR4/DDR5), frekans hızı (MHz) ve gecikme değeri (CL).</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Katı Hal Sürücüsü (NVMe SSD)</h2>
+        <p class="card-desc">İşletim sistemi, yazılımlar ve kişisel dosyaların kalıcı olarak yüksek hızda depolandığı birimdir.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> Okuma/yazma hızı (MB/s), PCIe nesli ve TBW yazma ömrü.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Güç Kaynağı (PSU)</h2>
+        <p class="card-desc">Şebekeden gelen alternatif akımı (AC) bilgisayar parçalarının kullanabileceği doğru akıma (DC) dönüştürür.</p>
+        <p class="card-meta"><strong>Seçim Kriteri:</strong> Watt kapasitesi, 80+ verimlilik sertifikası ve akım korumaları.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>DonanımRehberi &copy; 2026 - BPR201 İnternet Tabanlı Programlama Projesi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
