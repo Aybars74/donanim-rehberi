@@ -12,6 +12,6 @@ Bu belge, **DonanımRehberi** web sitesinin tarayıcı üzerinde gerçekleştiri
 | **6** | Tarayıcı genişliğini `390px` yapma ve `Tab` tuşu ile gezinme | Yatay taşma (horizontal scroll) olmaz; arama kutusu ve Temizle düğmesine klavyeyle odaklanılır. | `390px` genişlikte yatay taşma oluşmadı; `Tab` tuşuyla giriş kutusu ve düğmeye odaklanıldı. | **Geçti** |
 
 ## Ekran Görüntüleri
-- `ekran_goruntuleri/1_normal_arama.png`: Normal arama ve sayaç görünümü
-- `ekran_goruntuleri/2_bos_sonuc.png`: Eşleşme olmadığında görünen boş sonuç uyarısı
-- `ekran_goruntuleri/3_mobil_gorunum.png`: `390px` mobil ekran düzeni ve klavye odağı
+- `ekran_goruntuleri/1_normal_arama.jpg`: Normal arama ve sayaç görünümü
+- `ekran_goruntuleri/2_bos_sonuc.jpg`: Eşleşme olmadığında görünen boş sonuç uyarısı
+- `ekran_goruntuleri/3_mobil_gorunum.jpg`: `390px` mobil ekran düzeni ve klavye odağı
