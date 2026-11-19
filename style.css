@@ -46,7 +46,6 @@ main {
   padding: 0 1rem;
 }
 
-/* Klavye Odak Göstergesi (Erişilebilirlik) */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
@@ -356,7 +355,6 @@ input:focus-visible {
   color: var(--muted);
 }
 
-/* 390px ve altı mobil ekran uyumu */
 @media (max-width: 420px) {
   .hero h1 {
     font-size: 1.45rem;
@@ -374,4 +372,6 @@ input:focus-visible {
   .btn-clear {
     width: 100%;
   }
+}[hidden] {
+  display: none !important;
 }

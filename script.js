@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function filterCards() {
-    // Kenar boşluklarını temizle ve Türkçe karakter uyumlu küçük harfe çevir
     const query = searchInput.value.trim().toLocaleLowerCase("tr-TR");
     let visibleCount = 0;
 
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         ? titleElement.textContent.trim().toLocaleLowerCase("tr-TR")
         : "";
 
-      // Filtreleme koşulu: Arama kutusu boşsa veya başlık aranan ifadeyi içeriyorsa göster
       const isMatch = query === "" || titleText.includes(query);
 
       if (isMatch) {
@@ -31,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Sonuç sayacını ve boş sonuç mesajını güncelle
     if (visibleCount === 0) {
       resultCount.textContent = "0 içerik gösteriliyor.";
       emptyMessage.hidden = false;
@@ -42,12 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : `${visibleCount} eşleşen içerik bulundu.`;
       emptyMessage.hidden = true;
     }
-  }
-
-  // Event Listener 1: Kullanıcı arama kutusuna yazdıkça anlık filtreleme
   searchInput.addEventListener("input", filterCards);
 
-  // Event Listener 2: Temizle düğmesine tıklandığında aramayı sıfırlama
   clearBtn.addEventListener("click", () => {
     searchInput.value = "";
     filterCards();
