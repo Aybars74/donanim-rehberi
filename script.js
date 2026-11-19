@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
           : `${visibleCount} eşleşen içerik bulundu.`;
       emptyMessage.hidden = true;
     }
+    }
+    
   searchInput.addEventListener("input", filterCards);
 
   clearBtn.addEventListener("click", () => {
